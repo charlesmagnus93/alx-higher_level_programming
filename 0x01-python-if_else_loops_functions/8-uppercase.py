@@ -11,4 +11,4 @@ def uppercase(str):
         b = ord(i) - 32
         a+= f'{chr(b)}'
     
-    print(a)
+    print(a.format())
