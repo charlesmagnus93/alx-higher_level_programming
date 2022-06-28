@@ -3,12 +3,12 @@ def uppercase(str):
     a = ''
     for i in str:
         if (i.isnumeric() or ord(i) < 65):
-            a+= i
+            a += i
             continue
-        if (ord(i) >= 65 and ord(i)<= 91):
-            a+= i
+        if (ord(i) >= 65 and ord(i) <= 91):
+            a += i
             continue
-        b = ord(i) - 32
-        a+= f'{chr(b)}'
-    
+        b = (ord(i) - 32)
+        a += (f'{chr(b)}')
+
     print(a.format())
