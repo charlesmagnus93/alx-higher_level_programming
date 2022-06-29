@@ -6,7 +6,7 @@ def magic_calculation(a, b, c):
     if a < b:
         return c
     elif c > b:
-        return True
+        return b
     else:
         b = a
         return c
