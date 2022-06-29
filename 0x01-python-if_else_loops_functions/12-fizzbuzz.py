@@ -10,4 +10,4 @@ def fizzbuzz():
             a += f'FizzBuzz '
         else:
             a += f'{str(i)} '
-    print(a.rstrip().lstrip())
+    print(a.strip())
