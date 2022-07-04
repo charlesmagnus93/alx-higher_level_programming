@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
+    a = ''
     for x in matrix:
         for y in x:
-            print(' {}'.format(y), end='')
-        print('{}'.format(''))
+            a += '{} '.format(y)
+        print('{}'.format(a).rstrip())
+        a = ''
