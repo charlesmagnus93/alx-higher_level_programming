@@ -8,7 +8,10 @@ def best_score(a_dictionary):
     else:
         keys = sorted(a_dictionary)
         for x in keys:
-            if a_dictionary[x] > best:
-                best = a_dictionary[x]
-                name = x
+            if a_dictionary[x] is not None:
+                if a_dictionary[x]   > best:
+                    best = a_dictionary[x]
+                    name = x
+            else:
+                continue  
     return name
