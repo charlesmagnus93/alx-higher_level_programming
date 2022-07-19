@@ -3,3 +3,6 @@
 class Square:
     """Square definition"""
     pass
+
+    def __init__(self):
+        pass
