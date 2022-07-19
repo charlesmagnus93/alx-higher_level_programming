@@ -7,12 +7,13 @@ no module
 class Square:
     """
     Square definition
+    def __init__(self, size=0):
     """
     def __init__(self, size=0) -> None:
         """
         Initialization
         -----------
-        size: interger
+        size: check if interger
         """
         self.__size = size
         try:
