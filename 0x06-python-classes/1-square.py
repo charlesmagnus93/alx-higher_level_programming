@@ -1,7 +1,15 @@
 #!/usr/bin/python3
-class Square:
-    """Square"""
+"""
+no module
+"""
 
+
+class Square:
+    """
+    Square definition
+    """
     def __init__(self, size) -> None:
-        """Initialization"""
+        """
+        Initialization
+        """
         self.__size = size
