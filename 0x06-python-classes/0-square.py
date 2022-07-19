@@ -3,8 +3,4 @@ class Square:
     """
     Square definition
     """
-
-    def __init__(self) -> None:
-        """
-        Initialization
-        """
+    pass
