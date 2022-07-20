@@ -62,9 +62,7 @@ class Square:
             assert (isinstance(value[0], int)) or (isinstance(value[1], int))
         except Exception:
             raise TypeError('position must be a tuple of 2 positive integers')
-        try:
-            value[0] >= 0 or value[1] >= 0
-        except Exception:
+        if value[0] < 0 or value[1] < 0:
             raise TypeError('position must be a tuple of 2 positive integers')
 
     def area(self):
