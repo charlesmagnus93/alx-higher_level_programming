@@ -1,3 +1,4 @@
+
 #!/usr/bin/python3
 """
 no module
@@ -28,6 +29,8 @@ class Square:
         try:
             assert (isinstance(position, tuple))
         except Exception:
+            raise TypeError('position must be a tuple of 2 positive integers') from None
+        except:
             raise TypeError('position must be a tuple of 2 positive integers')
         try:
             assert (isinstance(position[0], int)) or (isinstance(position[1], int))
