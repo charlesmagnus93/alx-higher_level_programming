@@ -9,15 +9,15 @@ class Square:
     Square definition
     def __init__(self, size=0):
     """
-    def __init__(self, size=0) -> None:
+    def __init__(self, size=0):
         """
         Initialization
-        -----------
-        size: check if interger
+        --------
+        size: interger
         """
         self.__size = size
         try:
-            assert type(size) == int
+            assert (isinstance(size, int))
         except:
             raise TypeError('size must be an integer')
         if size < 0:
