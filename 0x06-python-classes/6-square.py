@@ -16,13 +16,24 @@ class Square:
         size: interger
         """
         self.__size = size
-        self.__position = position
         try:
             assert (isinstance(size, int))
         except Exception:
             raise TypeError('size must be an integer')
         if size < 0:
             raise ValueError('size must be >= 0')
+
+        self.__position = position
+        try:
+            assert (isinstance(position, tuple))
+        except Exception:
+            raise TypeError('position must be a tuple of 2 positive integers')
+        try:
+            assert (isinstance(position[0], int)) or (isinstance(position[1], int))
+        except Exception:
+            raise TypeError('position must be a tuple of 2 positive integers')
+        if position[0] < 0 or position[1] < 0:
+            raise TypeError('position must be a tuple of 2 positive integers')
 
     @property
     def size(self):
