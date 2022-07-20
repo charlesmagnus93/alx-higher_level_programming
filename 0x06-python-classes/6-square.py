@@ -53,6 +53,9 @@ class Square:
 
     @position.setter
     def position(self, value):
+        """
+        set private attrib position
+        """
         self.__position = value
         try:
             assert (isinstance(value, tuple))
