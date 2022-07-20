@@ -14,6 +14,7 @@ class Square:
         Initialization
         --------
         size: interger
+        position: tuple
         """
         self.__size = size
         try:
