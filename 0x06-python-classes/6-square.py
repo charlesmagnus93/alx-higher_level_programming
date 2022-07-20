@@ -30,6 +30,13 @@ class Square:
         retrieve private attri
         """
         return self.__size
+    
+    @property
+    def position(self):
+        """
+        retrieve private attrib position
+        """
+        return self.__position
 
     @size.setter
     def size(self, value):
@@ -43,13 +50,6 @@ class Square:
             raise TypeError('size must be an integer')
         if value < 0:
             raise ValueError('size must be >= 0')
-
-    @property
-    def position(self):
-        """
-        retrieve private attrib position
-        """
-        return self.__position
 
     @position.setter
     def position(self, value):
@@ -77,13 +77,13 @@ class Square:
         """
         print square with caracter #
         """
-        if self.size == 0:
+        if self.__size == 0:
             print()
         for x in range(self.position[1]):
             print('\n')
-        for x in range(self.size):
+        for x in range(self.__size):
             for y in range(self.position[0]):
                 print(' ', end="")
-            for y in range(self.size):
+            for y in range(self.__size):
                 print('#', end="")
             print()
