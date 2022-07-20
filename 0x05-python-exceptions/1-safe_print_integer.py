@@ -2,7 +2,7 @@
 
 def safe_print_integer(value):
     try:
-        if type(value) == int:
+        if any(type(el) == int for el in value):
             print("{:d}".format(value))
             return True
         else:
