@@ -95,10 +95,8 @@ class Square:
         """
         if self.size == 0:
             print()
-        if self.position[1] == 0:
-            print()
         for x in range(self.position[1]):
-            print('\n')
+            print('')
         for x in range(self.size):
             for y in range(self.position[0]):
                 print(' ', end="")
