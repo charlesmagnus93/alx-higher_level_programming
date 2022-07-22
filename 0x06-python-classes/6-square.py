@@ -17,7 +17,7 @@ class Square:
         size: interger
         position: tuple
         """
-        self.__size = size
+        self.size = size
         try:
             assert (isinstance(size, int))
         except Exception:
@@ -25,7 +25,7 @@ class Square:
         if size < 0:
             raise ValueError('size must be >= 0')
 
-        self.__position = position
+        self.position = position
         try:
             assert (isinstance(position, tuple))
         except Exception:
