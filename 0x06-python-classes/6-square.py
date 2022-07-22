@@ -74,11 +74,11 @@ class Square:
         self.__position = value
         try:
             assert (isinstance(value, tuple))
-        except Exception:
+        except BaseException:
             raise TypeError('position must be a tuple of 2 positive integers')
         try:
             assert (isinstance(value[0], int)) or (isinstance(value[1], int))
-        except Exception:
+        except BaseException:
             raise TypeError('position must be a tuple of 2 positive integers')
         if value[0] < 0 or value[1] < 0:
             raise TypeError('position must be a tuple of 2 positive integers')
