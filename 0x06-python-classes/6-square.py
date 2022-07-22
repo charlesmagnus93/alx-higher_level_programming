@@ -54,7 +54,7 @@ class Square:
         self.__size = value
         try:
             assert (isinstance(value, int))
-        except Exception:
+        except BaseException:
             raise TypeError('size must be an integer')
         if value < 0:
             raise ValueError('size must be >= 0')
