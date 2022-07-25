@@ -1,0 +1,24 @@
+"""
+Tests function "say_my_name"
+"""
+"say_my_name" print my name
+
+    >>> say_my_name = __import__("3-say_my_name").say_my_name
+    >>> say_my_name("Charlemagne", "Agbolossou")
+    My name is Charlemagne Agbolossou
+    
+    >>> say_my_name("Charlemagne")
+    My name is Charlemagne
+
+    >>> say_my_name("", "Charlemagne")
+    My name is Charlemagne
+
+    >>> say_my_name(12, "Parker")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_my_name("Petter", 12)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+    >>> say_my_name("", "")
