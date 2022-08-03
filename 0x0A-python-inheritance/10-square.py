@@ -41,6 +41,7 @@ class Rectangle(BaseGeometry):
 
 class Square(Rectangle):
     """Square inherits from Rectangle"""
+
     def __init__(self, size):
         """initialization"""
         super().__init__(size, size)
