@@ -135,3 +135,13 @@ class Rectangle(Base):
         my_dict["x"] = self.x
         my_dict["y"] = self.y
         return my_dict
+
+    @classmethod
+    def create(cls, **dictionary):
+        return Rectangle(
+            dictionary['width'],
+            dictionary['height'],
+            dictionary['x'],
+            dictionary['y'],
+            dictionary['id']
+        )
