@@ -8,6 +8,6 @@ Base = __import__('models.base').Base
 class TestBase(unittest.TestCase):
     def test_none(self):
         """
-            return None when list is empty
+            return nbr
         """
         self.assertAlmostEqual(Base(), None)
