@@ -4,6 +4,7 @@ no module
 """
 import json
 
+
 class Base:
     """
     Base definition
