@@ -109,7 +109,7 @@ class Rectangle(Base):
             self.__height
         )
 
-    def update(self, *args, **kwargs):
+    def update(self, *args):
         """assigns an argument to each list"""
         if (args):
             for i, j in enumerate(args):
@@ -123,5 +123,3 @@ class Rectangle(Base):
                     self.x = j
                 elif i == 4:
                     self.y = j
-        for key, value in kwargs.items():
-            setattr(self, key, value)
