@@ -1,2 +1,2 @@
 -- list all rows
-SELECT score, name FROM second_table ORDER BY score DESC;
+SELECT score, DISTINCT name FROM second_table ORDER BY score DESC;
