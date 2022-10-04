@@ -7,4 +7,3 @@ if (!argv[2]) {
 } else {
   console.log(argv[2]);
 }
-
