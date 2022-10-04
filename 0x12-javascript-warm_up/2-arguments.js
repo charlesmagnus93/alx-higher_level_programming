@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// log arguments
+
 const { argv } = require('node:process');
 
 if (argv.length < 3) {
