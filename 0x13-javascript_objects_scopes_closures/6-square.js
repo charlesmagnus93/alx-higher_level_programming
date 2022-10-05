@@ -6,7 +6,7 @@ module.exports = class Square extends Square0 {
   charPrint (c) {
     if (c) {}
     let str = '';
-    const caracter = c ? 'C' : 'X';
+    const caracter = c ? c : 'X';
     for (let i = 0; i < this.height; i++) {
       for (let y = 0; y < this.width; y++) {
         str += caracter;
