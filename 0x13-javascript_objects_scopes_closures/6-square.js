@@ -7,7 +7,11 @@ module.exports = class Square extends Square0 {
     let str = '';
     for (let i = 0; i < this.height; i++) {
       for (let y = 0; y < this.width; y++) {
-        str += c ? c : 'X';
+        if (c) {
+          str += c;
+        } else {
+          str += 'X';
+        }
       }
       if (i === (this.height - 1)) {
         str += '';
