@@ -3,7 +3,7 @@ from sys import argv
 import MySQLdb
 
 """
-Request to DB using argements
+Request to DB using argements & filter
 """
 
 conn = MySQLdb.connect(
@@ -15,7 +15,7 @@ conn = MySQLdb.connect(
     charset="utf8"
 )
 cur = conn.cursor()
-cur.execute("SELECT * FROM states ORDER BY id ASC")
+cur.execute('SELECT * FROM states WHERE name LIKE "N%" ORDER BY id ASC')
 query_rows = cur.fetchall()
 for row in query_rows:
     print(row)
