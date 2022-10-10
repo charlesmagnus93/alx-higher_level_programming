@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Request to DB using argements & filter
+Request to DB using argements, filter & format
 """
 from sys import argv
 import MySQLdb
@@ -16,7 +16,7 @@ def main():
         charset="utf8"
     )
     cur = conn.cursor()
-    cur.execute('SELECT * FROM states WHERE name LIKE "[N]%" ORDER BY id ASC')
+    cur.execute('SELECT * FROM states WHERE name="{}" ORDER BY id ASC'.format(argv[4]))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
