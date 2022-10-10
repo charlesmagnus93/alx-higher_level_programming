@@ -1,16 +1,12 @@
 #!/usr/bin/python3
+
+"""Request to DB using arguments"""
 from sys import argv
 import MySQLdb
 
-"""
-Request to DB using argements
-"""
-
 
 def main():
-    """
-    Create connexion to sql DB and make request
-    """
+    """Create connexion to sql DB and make request"""
     conn = MySQLdb.connect(
         host="localhost",
         port=3306,
