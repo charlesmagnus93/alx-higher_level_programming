@@ -2,9 +2,10 @@
 """
 get header
 """
-if __name__ == '__main__':
-    import sys
-    import urllib.request
+import sys
+import urllib.request
 
-    with urllib.request.urlopen(sys.argv[1]) as response:
-        print(response.headeirs.get('X-Request-Id'))
+with urllib.request.urlopen(sys.argv[1]) as response:
+    print(response.headers.get('X-Request-Id'))
+if __name__ == '__main__':
+    sys, urllib.request
