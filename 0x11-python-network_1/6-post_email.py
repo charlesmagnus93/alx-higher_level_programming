@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-
-import sys
-import requests
-
-data = {'email': sys.argv[2]}
-req = requests.post(sys.argv[1], data=data)
-print(req.text)
-
+"""
+Post data
+"""
 if __name__ == "__main__":
-    sys, requests
+
+    import sys
+    import requests
+
+    data = {'email': sys.argv[2]}
+    req = requests.post(sys.argv[1], data=data)
+    print(req.text)
