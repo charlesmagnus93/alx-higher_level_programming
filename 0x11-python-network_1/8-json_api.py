@@ -8,11 +8,11 @@ if __name__ == "__main__":
     import requests
 
     url = "http://0.0.0.0:5000/search_user"
-    if len(sys.argv[1]) > 1:
+    if len(sys.argv) > 1:
         q = sys.argv[1]
     else:
         q = ""
-    req = requests.post(url, params={q: q})
+    req = requests.post(url, data={q: q})
     if req.headers.get('content-type') == 'application/json':
         if req.json() == {}:
             print('No result')
