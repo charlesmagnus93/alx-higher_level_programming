@@ -6,6 +6,9 @@ request('https://swapi-api.hbtn.io/api/films/', (err, response, body) => {
   if (err) {
     console.log(err);
   }
+  if (response.statusCode !== 200) {
+    return;
+  }
   const data = JSON.parse(body).results;
 
   const count = data.reduce((count, item) => {
